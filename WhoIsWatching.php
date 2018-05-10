@@ -37,7 +37,7 @@ $whoiswatching_allowaddingpeople = true;
 # Set the following to either True or False to optionally display a count of zero users watching a particular page
 $whoiswatching_showifzero = true;
 
-function fnShowWatchingCount( &$template, &$tpl ) {
+function fnShowWatchingCount( $template, $tpl ) {
 	global $wgLang, $wgPageShowWatchingUsers, $whoiswatching_showifzero, $wgOut;
 
 	if ( $wgPageShowWatchingUsers && $whoiswatching_showifzero ) {
